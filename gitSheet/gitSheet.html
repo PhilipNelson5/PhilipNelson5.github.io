@@ -2,13 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script%20Alice" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alice" rel="stylesheet">
     <link href="style.css" rel="stylesheet" type="text/css">
     <title>git cheat sheet</title>
   </head>
   <body>
     <h1>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/2000px-Git-logo.svg.png"
+      <img src="resources/git-logo.png"
            alt="git"
            height=50
            >
@@ -23,7 +24,7 @@
         <tr>
           <th>Command</th>
           <th>Description</th>
-          <th>Flags</th>
+          <th>Flags / Options</th>
           <th>Example</th>
         </tr>
       </thead>
@@ -38,22 +39,26 @@
           <td>add</td>
           <td>Stage a file contents for commit</td>
           <td>
-            -n Dry Run: doesn't actually add the files <br/>
-            -u Update: only files currently tracked <br/>
-            -A All: all files in the project
+            <code>-n</code> Dry Run: doesn't actually add the files <br/>
+            <code>-u</code> Update: only files currently tracked <br/>
+            <code>-A</code> All: all files in the project
           </td>
           <td><code>git add file.html</code></td>
         </tr>
         <tr>
           <td>commit</td>
           <td>Record staged changes to the repository</td>
-          <td>-m &lt;msg&gt; Message: use the given &lt;msg&gt; as the commit message</td>
+          <td><code>-m &lt;msg&gt;</code> Message: use the given &lt;msg&gt; as the commit message</td>
           <td><code>git commit -m"commit message"</code></td>
         </tr>
         <tr>
           <td>push</td>
           <td>Update remote repository with committed files</td>
-          <td>origin &lt;branch name&gt;</td>
+          <td>
+            <code>origin &lt;branch name&gt;</code><br/>
+            <code>--tags</code> push all tags <br/>
+            <code>: &lt;tag&gt;</code> delete tag
+          </td>
           <td><code>git push origin master</code></td>
         </tr>
       </tbody>
@@ -65,17 +70,17 @@
 </html>
 
 <!--
-  x <title>
-  x <p>
-  x <span>
-  x <h1>
-  x <h2>
-  x <table>
-  x <tbody>
-  x <th>
-  x <tr>
-  x <td>
-  x <a>
-  x <img>
-  x <code>
+  ✓ <title>
+  ✓ <p>
+  ✓ <span>
+  ✓ <h1>
+  ✓ <h2>
+  ✓ <table>
+  ✓ <tbody>
+  ✓ <th>
+  ✓ <tr>
+  ✓ <td>
+  ✓ <a>
+  ✓ <img>
+  ✓ <code>
 -->
