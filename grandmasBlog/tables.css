@@ -1,0 +1,146 @@
+/* spacing */
+
+.headimg {
+  display: block;
+  max-width: 70px;
+  height: auto;
+  margin: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.group {
+  display: inline; 
+}
+
+body
+{
+  background-image: url('resources/plant.jpg');
+  background-attachment: fixed;
+  font-size: 1.6rem;
+}
+
+table
+{
+  table-layout: fixed;
+  border-collapse: collapse;
+  vertical-align: middle;
+}
+
+th, td
+{
+  padding: 15px;
+}
+
+/* typography */
+
+html
+{
+  font-family: 'Alice', serif;
+}
+
+thead th
+{
+  font-family: 'Kaushan Script', cursive;
+}
+
+th
+{
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+td
+{
+  letter-spacing: 1px;
+}
+
+tbody code{
+  font-size: 1.5rem;
+}
+
+tbody td
+{
+  text-align: left;
+  border: 3px solid #DFE2E5;
+}
+
+thead
+{
+  background: url(resources/nebula.jpeg);
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+thead th
+{
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(255,255,255,.25));
+  border: 3px solid #DFE2E5;
+  font-size: medium; 
+}
+
+tbody td:first-of-type
+{
+  font-weight: bold;
+  text-align: center;
+}
+
+tbody tr:nth-child(odd)
+{
+  background-color: rgba(255, 255, 255, 0.90);
+}
+
+tbody tr:nth-child(even)
+{
+  background-color: rgba(246, 248, 250, 0.90);
+}
+
+caption
+{
+  font-family: 'Alice', serif;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px 5px white;
+  color: black;
+  padding: 20px;
+  caption-side: top;
+  letter-spacing: 1px;
+}
+
+article{
+  flex-direction: row;
+}
+
+.table {
+  height: 500px;
+  overflow: scroll;
+  margin-bottom: 25px;
+  border: 3px solid black;
+  border-style: outset;
+  width: 600px;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.table1 {
+  order: 1;
+  background-attachment: fixed;
+  background-image: url('resources/space1.jpg');
+}
+
+.table2 {
+  order: 2;
+  background-attachment: local;
+  background-image: url('resources/space2.jpg');
+  background-size: contain;
+
+}
+
+.table3 {
+  order: 3;
+  background-attachment: scroll;
+  background-image: url('resources/space3.jpg');
+  background-size: contain;
+}

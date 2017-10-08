@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alice" rel="stylesheet">
+    <link href="base.css" rel="stylesheet" type="text/css">
+    <link href="tables.css" rel="stylesheet" type="text/css">
+    <title>Tech Tips</title>
+  </head>
+
+  <body>
+
+    <header>
+    
+      <h1>
+        Grandma's Tech Tips and Cheat Sheets
+      </h1>
+
+      <div class="group">
+        <img class=headimg src="resources/git-logo.png"
+             alt="git-logo"
+             >
+
+        <img class=headimg src="resources/HTML-logo.png"
+             alt="html-logo"
+             >
+
+        <img class=headimg src="resources/CSS-logo.png"
+             alt="css-logo"
+             >
+      </div>
+
+      </header>
+
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="tables.html">Grandma's Tech Tips</a></li>
+          <li><a href="about.html">About Grandma</a></li>
+        </ul>
+      </nav>
+
+    <main>
+
+      <article>
+
+        <h2 class="fill">
+          Grandma grandma has a black belt in Git FOO!
+        </h2>
+
+        <div class="table table1">
+          <table>
+            <caption>git references</caption>
+            <thead>
+              <tr>
+                <th>Command</th>
+                <th>Description</th>
+                <th>Flags / Args</th>
+                <th>Example</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>init</td>
+                <td>Initializes a new repository</td>
+                <td>&nbsp;</td>
+                <td><code>git init</code></td>
+              </tr>
+              <tr>
+                <td>clone</td>
+                <td>Clone a repository into a new directory</td>
+                <td>&nbsp;</td>
+                <td><code>git clone "URL"</code></td>
+              </tr>
+              <tr>
+                <td>add</td>
+                <td>Stage a file contents for commit</td>
+                <td>
+                  <ul>
+                    <li><code>-n</code> Dry Run: shows which files will be added</li>
+                    <li><code>-u</code> Update: only files currently tracked</li>
+                    <li><code>-A</code> All: all files in the project</li>
+                  </ul>
+                </td>
+                <td><code>git add file.html</code></td>
+              </tr>
+              <tr>
+                <td>reset</td>
+                <td>Clear staged files</td>
+                <td>&nbsp;</td>
+                <td><code>git reset</code></td>
+              </tr>
+              <tr>
+                <td>commit</td>
+                <td>Record staged changes to the repository</td>
+                <td><code>-m &lt;<em>msg</em>&gt;</code> Message: use the given &lt;<em>msg</em>&gt; as the commit message</td>
+                <td><code>git commit -m"commit message"</code></td>
+              </tr>
+              <tr>
+                <td>revert</td>
+                <td>Revert to a previous commit</td>
+                <td>&lt;<em>commit</em>&gt;</td>
+                <td><code>git revert <em>commit</em></code></td>
+              </tr>
+              <tr>
+                <td>push</td>
+                <td>Update remote repository with committed files</td>
+                <td>
+                  <ul>
+                    <li><code>origin &lt;branch name&gt;</code></li>
+                    <li><code>origin &lt;tag&gt;</code></li>
+                    <li><code>--tags</code> push all tags </li>
+                    <li><code>: &lt;<em>tag</em>&gt;</code> delete tag</li>
+                  </ul>
+                </td>
+                <td><code>git push origin <em>branch</em></code></td>
+              </tr>
+              <tr>
+                <td>fetch</td>
+                <td>Download objects and refs from remote repository</td>
+                <td>&nbsp;</td>
+                <td><code>git fetch origin <em>branch</em></code></td>
+              </tr>
+              <tr>
+                <td>merge</td>
+                <td>Join two or more development histories together</td>
+                <td><code>-m &lt;<em>msg</em>&gt;</code> Message: use the given &lt;<em>msg</em>&gt; as the commit message</td>
+                <td><code>git merge</code></td>
+              </tr>
+              <tr>
+                <td>pull</td>
+                <td>Does git fetch and merge from a remote repository</td>
+                <td>&nbsp;</td>
+                <td><code>git pull origin <em>branch</em></code></td>
+              </tr>
+              <tr>
+                <td>log</td>
+                <td>Show commit logs</td>
+                <td>&nbsp;</td>
+                <td><code>git log</code></td>
+              </tr>
+              <tr>
+                <td>tag</td>
+                <td>Tag the last commit or specify a commit to be tagged</td>
+                <td>&lt;<em>tag name</em>&gt;[&lt;<em>commit</em>&gt;]</td>
+                <td><code>git tag tagName</code></td>
+              </tr>
+              <tr>
+                <td>diff</td>
+                <td>Show changes from last commit</td>
+                <td>[&lt;path&gt;]</td>
+                <td><code>git diff <em>file</em></code></td>
+              </tr>
+              <tr>
+                <td>branch</td>
+                <td>Create a new branch</td>
+                <td>&lt;branch name&gt;</td>
+                <td><code>git branch <em>name</em></code></td>
+              </tr>
+              <tr>
+                <td>checkout</td>
+                <td>checkout a branch or commit</td>
+                <td>
+                  <ul>
+                    <li>&lt;commit or tag or branch&gt;</li>
+                    <li>-b &lt;branch name&gt; creates a new branch and checks it out</li>
+                  </ul>
+                </td>
+                <td><code>git checkout <em>branch name</em></code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="table table3">
+          <table>
+            <caption>HTML</caption>
+            <thead>
+              <tr>
+                <th>Command</th>
+                <th>Description</th>
+                <th>Flags / Args</th>
+                <th>Example</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>init</td>
+                <td>Initializes a new repository</td>
+                <td>&nbsp;</td>
+                <td><code>git init</code></td>
+              </tr>
+              <tr>
+                <td>clone</td>
+                <td>Clone a repository into a new directory</td>
+                <td>&nbsp;</td>
+                <td><code>git clone "URL"</code></td>
+              </tr>
+              <tr>
+                <td>add</td>
+                <td>Stage a file contents for commit</td>
+                <td>
+                  <ul>
+                    <li><code>-n</code> Dry Run: shows which files will be added</li>
+                    <li><code>-u</code> Update: only files currently tracked</li>
+                    <li><code>-A</code> All: all files in the project</li>
+                  </ul>
+                </td>
+                <td><code>git add file.html</code></td>
+              </tr>
+              <tr>
+                <td>reset</td>
+                <td>Clear staged files</td>
+                <td>&nbsp;</td>
+                <td><code>git reset</code></td>
+              </tr>
+              <tr>
+                <td>commit</td>
+                <td>Record staged changes to the repository</td>
+                <td><code>-m &lt;<em>msg</em>&gt;</code> Message: use the given &lt;<em>msg</em>&gt; as the commit message</td>
+                <td><code>git commit -m"commit message"</code></td>
+              </tr>
+              <tr>
+                <td>revert</td>
+                <td>Revert to a previous commit</td>
+                <td>&lt;<em>commit</em>&gt;</td>
+                <td><code>git revert <em>commit</em></code></td>
+              </tr>
+              <tr>
+                <td>push</td>
+                <td>Update remote repository with committed files</td>
+                <td>
+                  <ul>
+                    <li><code>origin &lt;branch name&gt;</code></li>
+                    <li><code>origin &lt;tag&gt;</code></li>
+                    <li><code>--tags</code> push all tags </li>
+                    <li><code>: &lt;<em>tag</em>&gt;</code> delete tag</li>
+                  </ul>
+                </td>
+                <td><code>git push origin <em>branch</em></code></td>
+              </tr>
+              <tr>
+                <td>fetch</td>
+                <td>Download objects and refs from remote repository</td>
+                <td>&nbsp;</td>
+                <td><code>git fetch origin <em>branch</em></code></td>
+              </tr>
+              <tr>
+                <td>merge</td>
+                <td>Join two or more development histories together</td>
+                <td><code>-m &lt;<em>msg</em>&gt;</code> Message: use the given &lt;<em>msg</em>&gt; as the commit message</td>
+                <td><code>git merge</code></td>
+              </tr>
+              <tr>
+                <td>pull</td>
+                <td>Does git fetch and merge from a remote repository</td>
+                <td>&nbsp;</td>
+                <td><code>git pull origin <em>branch</em></code></td>
+              </tr>
+              <tr>
+                <td>log</td>
+                <td>Show commit logs</td>
+                <td>&nbsp;</td>
+                <td><code>git log</code></td>
+              </tr>
+              <tr>
+                <td>tag</td>
+                <td>Tag the last commit or specify a commit to be tagged</td>
+                <td>&lt;<em>tag name</em>&gt;[&lt;<em>commit</em>&gt;]</td>
+                <td><code>git tag tagName</code></td>
+              </tr>
+              <tr>
+                <td>diff</td>
+                <td>Show changes from last commit</td>
+                <td>[&lt;path&gt;]</td>
+                <td><code>git diff <em>file</em></code></td>
+              </tr>
+              <tr>
+                <td>branch</td>
+                <td>Create a new branch</td>
+                <td>&lt;branch name&gt;</td>
+                <td><code>git branch <em>name</em></code></td>
+              </tr>
+              <tr>
+                <td>checkout</td>
+                <td>checkout a branch or commit</td>
+                <td>
+                  <ul>
+                    <li>&lt;commit or tag or branch&gt;</li>
+                    <li>-b &lt;branch name&gt; creates a new branch and checks it out</li>
+                  </ul>
+                </td>
+                <td><code>git checkout <em>branch name</em></code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="table table2">
+          <table>
+            <caption>CSS</caption>
+            <thead>
+              <tr>
+                <th>Command</th>
+                <th>Description</th>
+                <th>Flags / Args</th>
+                <th>Example</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>init</td>
+                <td>Initializes a new repository</td>
+                <td>&nbsp;</td>
+                <td><code>git init</code></td>
+              </tr>
+              <tr>
+                <td>clone</td>
+                <td>Clone a repository into a new directory</td>
+                <td>&nbsp;</td>
+                <td><code>git clone "URL"</code></td>
+              </tr>
+              <tr>
+                <td>add</td>
+                <td>Stage a file contents for commit</td>
+                <td>
+                  <ul>
+                    <li><code>-n</code> Dry Run: shows which files will be added</li>
+                    <li><code>-u</code> Update: only files currently tracked</li>
+                    <li><code>-A</code> All: all files in the project</li>
+                  </ul>
+                </td>
+                <td><code>git add file.html</code></td>
+              </tr>
+              <tr>
+                <td>reset</td>
+                <td>Clear staged files</td>
+                <td>&nbsp;</td>
+                <td><code>git reset</code></td>
+              </tr>
+              <tr>
+                <td>commit</td>
+                <td>Record staged changes to the repository</td>
+                <td><code>-m &lt;<em>msg</em>&gt;</code> Message: use the given &lt;<em>msg</em>&gt; as the commit message</td>
+                <td><code>git commit -m"commit message"</code></td>
+              </tr>
+              <tr>
+                <td>revert</td>
+                <td>Revert to a previous commit</td>
+                <td>&lt;<em>commit</em>&gt;</td>
+                <td><code>git revert <em>commit</em></code></td>
+              </tr>
+              <tr>
+                <td>push</td>
+                <td>Update remote repository with committed files</td>
+                <td>
+                  <ul>
+                    <li><code>origin &lt;branch name&gt;</code></li>
+                    <li><code>origin &lt;tag&gt;</code></li>
+                    <li><code>--tags</code> push all tags </li>
+                    <li><code>: &lt;<em>tag</em>&gt;</code> delete tag</li>
+                  </ul>
+                </td>
+                <td><code>git push origin <em>branch</em></code></td>
+              </tr>
+              <tr>
+                <td>fetch</td>
+                <td>Download objects and refs from remote repository</td>
+                <td>&nbsp;</td>
+                <td><code>git fetch origin <em>branch</em></code></td>
+              </tr>
+              <tr>
+                <td>merge</td>
+                <td>Join two or more development histories together</td>
+                <td><code>-m &lt;<em>msg</em>&gt;</code> Message: use the given &lt;<em>msg</em>&gt; as the commit message</td>
+                <td><code>git merge</code></td>
+              </tr>
+              <tr>
+                <td>pull</td>
+                <td>Does git fetch and merge from a remote repository</td>
+                <td>&nbsp;</td>
+                <td><code>git pull origin <em>branch</em></code></td>
+              </tr>
+              <tr>
+                <td>log</td>
+                <td>Show commit logs</td>
+                <td>&nbsp;</td>
+                <td><code>git log</code></td>
+              </tr>
+              <tr>
+                <td>tag</td>
+                <td>Tag the last commit or specify a commit to be tagged</td>
+                <td>&lt;<em>tag name</em>&gt;[&lt;<em>commit</em>&gt;]</td>
+                <td><code>git tag tagName</code></td>
+              </tr>
+              <tr>
+                <td>diff</td>
+                <td>Show changes from last commit</td>
+                <td>[&lt;path&gt;]</td>
+                <td><code>git diff <em>file</em></code></td>
+              </tr>
+              <tr>
+                <td>branch</td>
+                <td>Create a new branch</td>
+                <td>&lt;branch name&gt;</td>
+                <td><code>git branch <em>name</em></code></td>
+              </tr>
+              <tr>
+                <td>checkout</td>
+                <td>checkout a branch or commit</td>
+                <td>
+                  <ul>
+                    <li>&lt;commit or tag or branch&gt;</li>
+                    <li>-b &lt;branch name&gt; creates a new branch and checks it out</li>
+                  </ul>
+                </td>
+                <td><code>git checkout <em>branch name</em></code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+    </main>
+
+    <footer>
+      <p>To learn more, checkout the git <a href="https://git-scm.com/documentation" >documentation</a> </p>
+
+      <p>Philip Nelson &copy; 2017</p>
+    </footer>
+  </body>
+</html>
