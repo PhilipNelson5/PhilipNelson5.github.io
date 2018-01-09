@@ -1,6 +1,4 @@
 # Home Page
 
-## Software Manual
-- thing one
-- thing two
-- thing three
+## MATH 5620
+[Software Manual](https://philipnelson5.github.io/class-projects/MATH5620_NumericalSolutionsOfDifferentialEquations)
