@@ -1,4 +1,6 @@
+---
 mathjax: true
+---
 
 # This is a test
 
