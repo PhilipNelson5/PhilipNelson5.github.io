@@ -1,3 +1,12 @@
-theme: jekyll-theme-modernist
 title: Philip's Software Projects
-description: A software manual for MATH 5620
+email: PhilipNelson5@gmail.com
+description: software and projects by me, Philip
+url: "http://philipnelson5.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+github_username: philipnelson5
+
+# Build settings
+markdown: kramdown
+mathjax: true
+theme: jekyll-theme-modernist
+plugins:
+  - jekyll-feed
