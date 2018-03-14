@@ -5,5 +5,5 @@
 
 ## CS5410 Game Development
 [Game Loop Simulation](https://philipnelson5.github.io/class-projects/CS5410_GameDev/1-GameLoop/index.html)
-
 [Maze Game](https://philipnelson5.github.io/class-projects/CS5410_GameDev/2-Maze/index.html)
+[Breakout](https://philipnelson5.github.io/class-projects/CS5410_GameDev/3-Breakout/index.html)
