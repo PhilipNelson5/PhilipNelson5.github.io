@@ -1,6 +1,6 @@
 # Home Page
 
-## MATH 5620
+## MATH 5620 Numerical Solutions to Differential Equations
 [Software Manual](https://philipnelson5.github.io/MATH5620/SoftwareManual)
 
 ## CS5410 Game Development
