@@ -1,5 +1,8 @@
 # Home Page
 
+## Math 4610 Fundamentals of Computational Mathematics
+[Software Manual](https://philipnelson5.github.io/math4610/SoftwareManual)
+
 ## MATH 5620 Numerical Solutions to Differential Equations
 [Software Manual](https://philipnelson5.github.io/MATH5620/SoftwareManual)
 
