@@ -10,6 +10,11 @@
 
 ## CS5400 Computer Graphics
 + [Bresenham Line Algorithm](https://philipnelson5.github.io/class-projects/CS5400_ComputerGraphics/1-BresenhamLineAlgorithm/index.html)
++ Curves (Hermite Curve, Cardinal Spline, Bezier Curve)
+  - [Demo of all 4 curves](https://philipnelson5.github.io/class-projects/CS5400_ComputerGraphics/2-Curves/index.html)
+  - [Interactive Bezier](https://philipnelson5.github.io/class-projects/CS5400_ComputerGraphics/2-Curves/demoIndex.html)
+    * click and drag control points
+    * press 'n' to add a new curve, click to set the 4 control points
 
 ## CS5410 Game Development
 + [Game Loop Simulation](https://philipnelson5.github.io/class-projects/CS5410_GameDev/1-GameLoop/index.html)
