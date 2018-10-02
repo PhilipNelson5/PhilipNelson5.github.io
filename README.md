@@ -15,6 +15,7 @@
   - [Interactive Bezier](https://philipnelson5.github.io/class-projects/CS5400_ComputerGraphics/2-Curves/demoIndex.html)
     * click and drag control points
     * press 'n' to add a new curve, click to set the 4 control points
++ [2D Transformations](https://philipnelson5.github.io/class-projects/CS5400_ComputerGraphics/3-2DTransformations/index.html)
 
 ## CS5410 Game Development
 + [Game Loop Simulation](https://philipnelson5.github.io/class-projects/CS5410_GameDev/1-GameLoop/index.html)
