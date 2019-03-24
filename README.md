@@ -1,5 +1,8 @@
 # Home Page
 
+## Chowdown Recipes
+[Recipes](http://philipnelson5.github.io/chowdown/)
+
 ## Math 4610 Fundamentals of Computational Mathematics
 [Software Manual](https://philipnelson5.github.io/math4610/SoftwareManual)
 
