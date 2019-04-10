@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>FOOD</title>
+    <style type="text/css">
+      //.junction {
+        //overflow-x:scroll;
+        //display:table;
+        //width: 100px;
+        //max-width: 100%;
+        //margin-bottom: 20px;
+        //background-color: #F00;
+        //border-collapse: collapse;
+        //border-spacing: 0;
+      }
+    </style>
+    <script type="text/javascript">
+      function makeHttpObject() {
+        try {return new XMLHttpRequest();}
+        catch (error) {}
+        try {return new ActiveXObject("Msxml2.XMLHTTP");}
+        catch (error) {}
+        try {return new ActiveXObject("Microsoft.XMLHTTP");}
+        catch (error) {}
+
+        throw new Error("Could not create HTTP request object.");
+      }
+      document.addEventListener('DOMContentLoaded', function() {
+        // Junction
+        var request = makeHttpObject();
+        request.open("GET", 'https://dining.usu.edu/locations/the-junction', true);
+        request.send(null);
+        request.onreadystatechange = function() {
+          if (request.readyState != 4)
+          {
+            document.getElementById('junction').innerText = "Could Not Get Menu";
+          }
+          else
+          {
+            var parser = new DOMParser();
+            var page = parser.parseFromString(request.responseText, 'text/html');
+            var tables = page.getElementsByTagName('table');
+            document.getElementById('junction').innerHTML = tables[4].innerHTML;
+          }
+        };
+        // Marketplace
+        var request2 = makeHttpObject();
+        request2.open("GET", 'https://dining.usu.edu/locations/marketplace', true);
+        request2.send(null);
+        request2.onreadystatechange = function() {
+          if (request2.readyState != 4)
+          {
+            document.getElementById('marketplace').innerText = "Could Not Get Menu";
+          }
+          else
+          {
+            var parser = new DOMParser();
+            var page = parser.parseFromString(request2.responseText, 'text/html');
+            var elem = page.getElementById('1');
+            document.getElementById('marketplace').innerHTML = elem.innerHTML;
+          }
+        };
+      }, false);
+    </script>
+  </head>
+  <body>
+    <h1> Where to Food?  </h1>
+
+    <h2> Junction </h2>
+    <div style='display:block; overflow-x:auto; width:100%; white-space: nowrap;'>
+      <table id=junction></table>
+    </div>
+
+    <h2> Marketplace </h2>
+    <div id=marketplace></div>
+  </body>
+</html>
