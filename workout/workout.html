@@ -4,26 +4,42 @@
     <meta charset="utf-8">
     <title>workout</title>
     <style type="text/css">
-        table, th, td {
-            border: 1px solid black;
+        table {
+          border-collapse: collapse;
         }
+        table tr {
+          border-bottom: 1px solid black;
+        }
+        table tr:last-child { 
+        }
+        th, td {
+          padding: 10px;
+        }
+        .text-center { text-align: center; }
+        .text-right { text-align: right; }
     </style>
     <script type="text/javascript">
       document.addEventListener('DOMContentLoaded', function() {
-				var d = new Date();
-				var end = d / 1000 / 60 / 60 / 24;
-				var start = 18134;
-				var diff = end - start
-				var weeks = diff / 7;
-				var push = Math.trunc(weeks * 6 + d.getDay());
+        var d = new Date();
+        var end = d / 1000 / 60 / 60 / 24;
 
-				var start2 = 18162;
-				var diff2 = end - start2
-				var weeks2 = diff2 / 7;
-				var sit = Math.trunc(weeks2 * 12 + d.getDay()*2);
+        var start = 18134;
+        var diff = end - start
+        var weeks = Math.trunc(diff / 7);
+        var push = Math.trunc(weeks * 6 + d.getDay());
+
+        var start2 = 18162;
+        var diff2 = end - start2
+        var weeks2 = Math.trunc(diff2 / 7);
+        var sit = Math.trunc(weeks2 * 12 + d.getDay()*2);
+        if(sit > push) sit = push;
+
+        var squat = Math.trunc(weeks2 * 6 + d.getDay());
 
         document.getElementById("push").innerHTML = push;
         document.getElementById("sit").innerHTML = sit;
+        document.getElementById("squat").innerHTML = squat;
+
       }, false);
     </script>
   </head>
@@ -35,12 +51,16 @@
         <th>number</th>
       </tr>
       <tr>
-        <td>Pushups</td>
-        <td><p id="push"></p></dt>
+        <td class="text-right">Pushups</td>
+        <td><p id="push" class="text-center"></p></dt>
       </tr>
       <tr>
-        <td>Situps</td>
-        <td><p id="sit"></p></dt>
+        <td class="text-right">Situps</td>
+        <td><p id="sit" class="text-center"></p></dt>
+      </tr>
+      <tr>
+        <td class="text-right">Squats</td>
+        <td><p id="squat" class="text-center"></p></dt>
       </tr>
     </table>
 
