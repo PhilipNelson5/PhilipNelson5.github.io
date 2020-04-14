@@ -27,4 +27,4 @@
 + [Breakout](https://philipnelson5.github.io/class-projects/CS5410_GameDev/3-Breakout/index.html)
 
 ## Vue.js
-+ [Weather Forecast](https://philipnelson5.github.io/weather_vue_ts/dist/index.html)
++ [Weather Forecast](https://philipnelson5.github.io/weather_vue_ts)
